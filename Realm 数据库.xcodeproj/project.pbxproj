@@ -15,6 +15,9 @@
 		3383F64A20DB8361003A7DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3383F64920DB8361003A7DA2 /* main.m */; };
 		3383F65420DB8362003A7DA2 /* Realm____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3383F65320DB8362003A7DA2 /* Realm____Tests.m */; };
 		3383F65F20DB8362003A7DA2 /* Realm____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3383F65E20DB8362003A7DA2 /* Realm____UITests.m */; };
+		3383F66E20DB87BC003A7DA2 /* Beacons.m in Sources */ = {isa = PBXBuildFile; fileRef = 3383F66D20DB87BC003A7DA2 /* Beacons.m */; };
+		3383F67120DB9B41003A7DA2 /* dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3383F67020DB9B41003A7DA2 /* dog.m */; };
+		FE827267D43EBA329D8AD564 /* libPods-Realm 数据库.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17163D309675C718B715F26D /* libPods-Realm 数据库.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17163D309675C718B715F26D /* libPods-Realm 数据库.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Realm 数据库.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3383F63720DB8361003A7DA2 /* Realm 数据库.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realm 数据库.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3383F63A20DB8361003A7DA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3383F63B20DB8361003A7DA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		3383F65A20DB8362003A7DA2 /* Realm 数据库UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Realm 数据库UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3383F65E20DB8362003A7DA2 /* Realm____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Realm____UITests.m"; sourceTree = "<group>"; };
 		3383F66020DB8362003A7DA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3383F66C20DB87BC003A7DA2 /* Beacons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beacons.h; sourceTree = "<group>"; };
+		3383F66D20DB87BC003A7DA2 /* Beacons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beacons.m; sourceTree = "<group>"; };
+		3383F66F20DB9B41003A7DA2 /* dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dog.h; sourceTree = "<group>"; };
+		3383F67020DB9B41003A7DA2 /* dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dog.m; sourceTree = "<group>"; };
+		9F94141E454EA91E30DA8FE8 /* Pods-Realm 数据库.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm 数据库.release.xcconfig"; path = "Pods/Target Support Files/Pods-Realm 数据库/Pods-Realm 数据库.release.xcconfig"; sourceTree = "<group>"; };
+		C468CBC71F2AA2849E455635 /* Pods-Realm 数据库.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Realm 数据库.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Realm 数据库/Pods-Realm 数据库.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE827267D43EBA329D8AD564 /* libPods-Realm 数据库.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				3383F65220DB8361003A7DA2 /* Realm 数据库Tests */,
 				3383F65D20DB8362003A7DA2 /* Realm 数据库UITests */,
 				3383F63820DB8361003A7DA2 /* Products */,
+				39EF9CE13423CB4EEFB12834 /* Pods */,
+				CE4BA24FC7C46A1CCE21E518 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +118,10 @@
 				3383F63B20DB8361003A7DA2 /* AppDelegate.m */,
 				3383F63D20DB8361003A7DA2 /* ViewController.h */,
 				3383F63E20DB8361003A7DA2 /* ViewController.m */,
+				3383F66C20DB87BC003A7DA2 /* Beacons.h */,
+				3383F66D20DB87BC003A7DA2 /* Beacons.m */,
+				3383F66F20DB9B41003A7DA2 /* dog.h */,
+				3383F67020DB9B41003A7DA2 /* dog.m */,
 				3383F64020DB8361003A7DA2 /* Main.storyboard */,
 				3383F64320DB8361003A7DA2 /* Assets.xcassets */,
 				3383F64520DB8361003A7DA2 /* LaunchScreen.storyboard */,
@@ -132,6 +149,23 @@
 			path = "Realm 数据库UITests";
 			sourceTree = "<group>";
 		};
+		39EF9CE13423CB4EEFB12834 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C468CBC71F2AA2849E455635 /* Pods-Realm 数据库.debug.xcconfig */,
+				9F94141E454EA91E30DA8FE8 /* Pods-Realm 数据库.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE4BA24FC7C46A1CCE21E518 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17163D309675C718B715F26D /* libPods-Realm 数据库.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3383F66320DB8362003A7DA2 /* Build configuration list for PBXNativeTarget "Realm 数据库" */;
 			buildPhases = (
+				2253EFA834FFB2F172629D37 /* [CP] Check Pods Manifest.lock */,
 				3383F63320DB8361003A7DA2 /* Sources */,
 				3383F63420DB8361003A7DA2 /* Frameworks */,
 				3383F63520DB8361003A7DA2 /* Resources */,
+				9F222D8FD5AF5DA20020B288 /* [CP] Embed Pods Frameworks */,
+				D063BDBDE0313B3A6C7D4F08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +297,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2253EFA834FFB2F172629D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F222D8FD5AF5DA20020B288 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realm 数据库/Pods-Realm 数据库-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D063BDBDE0313B3A6C7D4F08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Realm 数据库/Pods-Realm 数据库-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3383F63320DB8361003A7DA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +353,8 @@
 				3383F63F20DB8361003A7DA2 /* ViewController.m in Sources */,
 				3383F64A20DB8361003A7DA2 /* main.m in Sources */,
 				3383F63C20DB8361003A7DA2 /* AppDelegate.m in Sources */,
+				3383F67120DB9B41003A7DA2 /* dog.m in Sources */,
+				3383F66E20DB87BC003A7DA2 /* Beacons.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +515,7 @@
 		};
 		3383F66420DB8362003A7DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C468CBC71F2AA2849E455635 /* Pods-Realm 数据库.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +529,7 @@
 		};
 		3383F66520DB8362003A7DA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F94141E454EA91E30DA8FE8 /* Pods-Realm 数据库.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

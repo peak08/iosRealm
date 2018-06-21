@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Realm.h>
+#import "Beacons.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,43 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // 此段代码位于 [AppDelegate didFinishLaunchingWithOptions:]
+    
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    // 设置新的架构版本。必须大于之前所使用的版本
+    // （如果之前从未设置过架构版本，那么当前的架构版本为 0）
+    config.schemaVersion = 6;
+    
+    // 设置模块，如果 Realm 的架构版本低于上面所定义的版本，
+    // 那么这段代码就会自动调用
+    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion) {
+        // 我们目前还未执行过迁移，因此 oldSchemaVersion == 0
+        if (oldSchemaVersion < 4) {
+            // 没有什么要做的！
+            // Realm 会自行检测新增和被移除的属性
+            // 然后会自动更新磁盘上的架构
+            
+            //TODO: 修改之前老数据  重置等
+            [migration enumerateObjects:Beacons.className
+                                  block:^(RLMObject *oldObject, RLMObject *newObject) {
+                                      
+                                      // 将两个 name 合并到 fullName 当中
+                                      newObject[@"name"] = [NSString stringWithFormat:@"%@ %@",
+                                                                oldObject[@"age"],
+                                                                oldObject[@"sex"]];
+                                  }];
+
+        }
+    };
+    
+    // 通知 Realm 为默认的 Realm 数据库使用这个新的配置对象
+    [RLMRealmConfiguration setDefaultConfiguration:config];
+    
+    // 现在我们已经通知了 Realm 如何处理架构变化，
+    // 打开文件将会自动执行迁移
+    [RLMRealm defaultRealm];
+
     return YES;
 }
 

@@ -1,0 +1,7 @@
+platform :ios ,8.0
+
+target 'Realm 数据库' do
+ pod 'Realm'
+
+end
+
